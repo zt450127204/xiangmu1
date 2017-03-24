@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/scrollTop.js"></script>
+    <script src="js/list1.js"></script>
+    <script src="js/listData.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div class="xn">
+    <div class="mb1">
+        <p style="font-size: 50px;color: #311759;margin-top: 0;font-weight: bold">小鸟动态</p>
+        <p class="o">About&nbsp; Company</p>
+        <p class="d1"><img src="image/three_points01.png" alt=""></p>
+    </div>
+    <div class="x-x">
+        <h1 style="color: #4e4c83;">列表</h1>
+        <div id="pen" class="pen"></div>
+    </div>
+    <ul id="xn">
+        <li>
+            <p class="img"><img src="image/list_img01.jpg"></p>
+            <div class="sj"><img src="image/list_img_over_xiaojiantou.png" alt=""></div>
+            <div class="zi">
+                <div class="title_small"><h3 style="margin-top: 20px"></h3>
+                </div>
+                <p class="data"></p>
+                <p style="font-size: 15px;line-height: 25px">
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="xk" id="xk"></div>
+<ul id="itemHTML" style="display: none">
+    <li articleid="$articleId$" class="li">
+            <p class="img"><img src="$articleCover$"></p>
+            <div class="sj"><img src="image/list_img_over_xiaojiantou.png" alt=""></div>
+            <div class="zi">
+                <div class="title_small"><h3 style="margin-top: 20px"></h3>
+                    $articleTitle$
+                </div>
+                <p class="data">$updateTime$</p>
+                <p style="font-size: 15px;line-height: 25px">
+                    $describe$
+                </p>
+            </div>
+    </li>
+</ul>
+<div class="dj" id="list-more">
+
+
+
+</div>
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.footer-b{
+    width: 100%;
+    height: 383px;
+    background: url("../image/mokuai02_bg.jpg") no-repeat 50% 0;
+    overflow: hidden;
+}
+.footer{
+    width: 1100px;
+    height: 233px;
+    margin: 140px auto;
+}
+.f-line{
+    width: 1100px;
+    height: 2px;
+    background: url("../image/next&prev_line.png") repeat-x;
+    margin-top: 85px;
+}
+.f-z{
+    width: 120px;
+    height: 14px;
+    font-size: 14px;
+    color: white;
+    margin: 25px 490px;
+
+}
+.footer ul{
+    width: 558px;
+    height: 60px;
+    margin: 0 auto;
+}
+.footer li{
+    width: 57px;
+    height: 57px;
+    float: left;
+    margin-left: 23px;
+}
+@keyframes myframe{
+    from{
+        transform: scale(1.1,0.9);
+    }
+    60%{
+        transform:scale(0.9,1.1) ;
+    }
+    to{
+        transform:scale(1,1)
+    }
+}
+.footer li:hover{
+    animation: myframe 1s;
+    cursor: pointer;
+}
+
+.bottom-1{
+    background: url("../image/yinyue_duo.png") no-repeat 0 0;
+}
+.bottom-2{
+    background: url("../image/yinyue_lai.png") no-repeat 0 0;
+}
+.bottom-3{
+    background: url("../image/yinyue_mi.png") no-repeat 0 0;
+}
+.bottom-4{
+    background: url("../image/yinyue_fa.png") no-repeat 0 0;
+}
+.bottom-5{
+    background: url("../image/yinyue_suo.png") no-repeat 0 0;
+}.bottom-6{
+     background: url("../image/yinyue_la.png") no-repeat 0 0;
+ }
+.bottom-7{
+    background: url("../image/yinyue_xi.png") no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

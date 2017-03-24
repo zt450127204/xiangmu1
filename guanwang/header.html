@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+ <div class="head-box">
+    <div class="head">
+       <a href="#"><div class="logo"><img src="image/logo.png" alt=""></div></a>
+        <ul>
+            <li style="  background:url('image/nav_now_bg.png') no-repeat 50% 75px;"><a href="index.html" style="margin-left:0">首页</a></li>
+            <li class="down"><a href="aboutxiaoniao.html">小鸟掌学</a><img src="image/nav_xiajiantou.png" alt="">
+                <dl class="h">
+                    <dd onclick="javascript:window.open('aboutxiaoniao.html')">学习主页</dd>
+                    <dd onclick="javascript:window.open('aboutxiaoniao.html#1')">小鸟掌学概述</dd>
+                    <dd onclick="javascript:window.open('aboutxiaoniao.html#2')">对企业的价值</dd>
+                    <dd onclick="javascript:window.open('aboutxiaoniao.html#3')">小鸟掌云</dd>
+                    <dd>微课联盟</dd>
+                    <dd onclick="javascript:window.open('aboutxiaoniao.html#4')">APP下载</dd>
+                </dl>
+            </li>
+            <li><a href="list.html">小鸟动态</a><img src="image/nav_xiajiantou.png" alt=""></li>
+            <li class="down"><a href="article.html?type=companyIdea">企业文化</a><img src="image/nav_xiajiantou.png" alt="">
+                <dl class="h">
+                    <dd><a href="article.html?type=companyIdea" style="margin-left: 0">公司理念</a></dd>
+                    <dd><a href="article.html?type=companyCulture" style="margin-left: 0">公司文化</a></dd>
+                    <dd><a href="article.html?type=companyEnvironment" style="margin-left: 0">公司文化</a></dd>
+                </dl>
+            </li>
+            <li class="down"><a href="article.html?type=talents">人力资源</a><img src="image/nav_xiajiantou.png" alt="">
+                <dl class="h">
+                    <dd><a href="article.html?type=talents" style="margin-left: 0">人才理念</a></dd>
+                    <dd><a href="article.html?type=team" style="margin-left: 0">团队介绍</a></dd>
+                    <dd><a href="article.html?type=joinUs" style="margin-left: 0">招聘信息</a></dd>
+                </dl>
+            </li>
+            <li style="background-position: 62% 75px"><a href="article.html?type=telUs">联系我们</a></li>
+
+        </ul>
+    </div>
+ </div>
+
+
+
+
+
+<script>
+    $(function(){
+        $(".down").hover(
+                function(){
+                    $(this).find("dl").stop().slideDown(600,"bounceOut")
+                },
+                function(){
+                    $(this).find("dl").stop().slideUp(200)
+                });
+        $(".down dd").hover(
+                function() {
+                    $(this).stop().animate({"padding-left": "10px"});
+                },
+                function(){
+                    $(this).stop().animate({"padding-left": "20px"})
+                }
+        )
+
+
+    })
+
+
+</script>
+</body>
+</html>

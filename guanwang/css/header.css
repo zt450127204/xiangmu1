@@ -1,0 +1,61 @@
+.head-box{
+    width: 100%;
+    height: 120px;
+    background: url("../image/header_bg.jpg") no-repeat center;
+}
+.head{
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+}
+.logo{
+    width: 376px;
+    height:120px;
+    line-height: 120px;
+    float: left;
+}
+
+.head ul{
+    width: 584px;
+    height: 120px;
+    float: right;
+    line-height: 120px;
+}
+.head li a{
+    float: left;
+    color: white;
+    font-size: 14px;
+    margin-left: 23px;
+    font-weight: bold;
+}
+.head li{
+    float: left;
+    position: relative;
+}
+.head li:hover{
+    background:url("../image/nav_now_bg.png") no-repeat 50% 75px;
+}
+.head li img{
+   vertical-align: middle;
+   margin-left: 2px;
+}
+.head li dl{
+    position: absolute;
+    width: 160px;
+    background: #332347;
+    top: 90px;
+    color: white;
+    display: none;
+    z-index: 100;
+}
+.head dd{
+    height: 40px;
+    width: 120px;
+    padding: 0 20px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.head dd:hover{
+    background:rgba(0,0,0,0.2) url("../image/nav_li_bg.png") no-repeat 90% 50%;
+
+}

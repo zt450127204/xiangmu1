@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/scrollTop.js"></script>
+</head>
+<body>
+  <div class="footer-b">
+    <div class="footer">
+        <ul>
+            <li style="margin-left: 0" class="bottom-1"></li>
+            <li class="bottom-2"></li>
+            <li class="bottom-3"></li>
+            <li class="bottom-4"></li>
+            <li class="bottom-5"></li>
+            <li class="bottom-6"></li>
+            <li class="bottom-7"></li>
+        </ul>
+ 
+        <p class="f-line"></p>
+        <p class="f-z">蜀ICP备16002451号</p>
+    </div>
+  </div>
+  <div id="fh" class="fixed">
+      <div class="d-t2"></div>
+      <a href="article.html?type=telUs"><div class="d-t1"></div></a>
+  </div>
+
+
+
+
+<script>
+    $(function(){
+        var oLi=$(".footer li");
+        oLi.hover(
+                function(){
+                    $(this).css("backgroundPositionY","-57px")
+                },
+                function(){
+                   $(this).css("backgroundPositionY","0")
+                }
+        );
+        oLi.click(function(){
+                var index=$(this).index();
+                var om="";
+        if(navigator.userAgent.indexOf("rv:11.0")!=-1||navigator.userAgent.indexOf("msie")!=-1){
+            om=$('<bgsound class="remove-music" src="music/sound0'+index+'.mp3" autostart="true" loop="false"></bgsound>');
+            $("body").append(om);
+        }else if(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1) {
+            om=$(('<object class="remove-music'+index+'" data="music/sound0'+index+'.mp3" type="application/x-mplayer2" width="0" height="0"><param name="src" value="music/sound00.mp3"><param name="autostart" value="1">' +
+            '<param name="palycount" value="infinite"></object>'));
+            $("body").append(om);
+        }else{
+            om=$('<embed class="remove-music" src="music/sound0'+index+'.mp3" autostart="true" loop="true" width="0" height="0">');
+            $("body").append(om);
+        }
+            setTimeout(function(){
+                om.remove();
+            },3000)
+
+
+        })
+
+
+
+
+
+    })
+
+
+</script>
+</body>
+</html>
